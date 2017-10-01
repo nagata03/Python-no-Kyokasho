@@ -14,7 +14,7 @@ class Pos:
 
     def __mul__(self, other):
         if isinstance(other, (int, float)):
-            """変数がint型かfloat型の場合に流れるルート"""
+            """変数(other)がint型かfloat型の場合に流れるルート"""
             x2 = self.x * other
             y2 = self.y * other
             return Pos(x2, y2)
