@@ -17,11 +17,14 @@ class PrimeIter:
         # 素数を探す
         while not is_prime:
             is_prime = True
+
             for i in range(2, self.n):
                 if self.n % i == 0:
                     is_prime = False
                     break
+
             if is_prime: break
+
             self.n += 1
             # 最大値に達したら例外を出す
             if self.n >= self.max:
